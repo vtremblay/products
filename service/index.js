@@ -9,7 +9,7 @@ const productService = new ProductService();
 
 const callback = function (req, res) {
   return function (error, data) {
-    res.json(req.soajs.buildResponse(null, data));
+    res.json(req.soajs.buildResponse(error, data));
   }
 };
 
@@ -18,7 +18,7 @@ server.init(function () {
     productService.findByTypes(req.soajs.inputmaskData.types, req.soajs.registry, callback(req, res));
   });
   server.get('/products/:code', function (req, res) {
-    productService.findById(req.soajs.inputmaskData.code, req.soajs.registry, callback(req, res));
+    productService.findByCode(req.soajs.inputmaskData.code, req.soajs.registry, callback(req, res));
   });
   server.post('/products', function (req, res) {
     productService.create(req.soajs.inputmaskData.product, req.soajs.registry, callback(req, res));
