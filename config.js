@@ -3,7 +3,7 @@
 module.exports = {
   "type":"multi",
   "folders": [
-    "daemon/",
-    "service/"
+    "/daemon",
+    "/service"
   ]
 };
