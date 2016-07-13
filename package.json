@@ -9,6 +9,7 @@
   "dependencies": {
     "grunt": "^1.0.1",
     "mongodb": "^2.1.8",
+    "oracledb": "^1.10.0",
     "soajs": "git://github.com/soajs/soajs.git#develop"
   },
   "devDependencies": {

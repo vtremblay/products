@@ -22,7 +22,7 @@ describe('Product Mapper', function () {
         type: 'VP'
       };
 
-      let mapped = mapper.map(original)
+      let mapped = mapper.map(original);
 
       expect(mapped).to.deep.equal({
         code: 'AAAA',
