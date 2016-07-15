@@ -8,9 +8,10 @@
   },
   "dependencies": {
     "grunt": "^1.0.1",
-    "mongodb": "^2.1.8",
+    "mongodb": "^2.2.1",
     "oracledb": "^1.10.0",
-    "soajs": "git://github.com/soajs/soajs.git#develop"
+    "request": "^2.73.0",
+    "soajs": "^0.3.2"
   },
   "devDependencies": {
     "app-module-path": "^1.0.6",

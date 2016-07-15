@@ -1,10 +1,12 @@
 'use strict';
 
+process.env.SOAJS_ENV = 'DEV';
+
 const soajs = require('soajs');
 const config = require('./config.js');
 const server = new soajs.server.service(config);
 
-const ProductService = require('./product.service');
+const ProductService = require('./service/product.service.js');
 const productService = new ProductService();
 
 const callback = function (req, res) {
